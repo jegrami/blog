@@ -16,6 +16,15 @@ CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 
 DELETE_OUTPUT_DIRECTORY = True
 
+DELETE_OUTPUT_DIRECTORY = True
+
+M_CSS_FILES = ['https://fonts.googleapis.com/css?family=Source+Code+Pro:400,400i,600%7CSource+Sans+Pro:400,400i,600,600i&subset=latin-ext',
+               'static/m-dark.compiled.css']
+
+THEME_STATIC_PATHS = ['static/m-dark.compiled.css']
+
+
+
 # Following items are often useful when publishing
 
 # DISQUS_SITENAME = ""
