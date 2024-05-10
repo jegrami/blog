@@ -1,3 +1,5 @@
 # blog
-A repo for my blog pages
-#Jegrami's blog repo
+Repo for my blog source files. Visit blog [here](https://jegrami.github.io/blog)
+
+
+
