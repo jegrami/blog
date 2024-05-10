@@ -1,43 +1,14 @@
-name: Deploy Pleican to Github Pages
-
+name: Deploy Pelican site to GitHub Pages
 on:
-  # Trigger the workflow on push to the main branch
   push:
-    branches:
-      - main
-
+    branches: ["main"]
+  workflow_dispatch:
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      # Step 1: Checkout the code
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with: 
-          submodules: True
+  Deploy:
+    uses: seanh/pelican-github-pages/.github/workflows/pelican.yml@main
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
       
-      # Step 2: Enable pip cache
-      - name: Enable pip cache
-        run: |
-          mkdir -p $HOME/.cache/pip
-          sudo chown -R $USER:$USER $HOME/.cache/pip
-      
-      # Step 3: Setup Python
-      - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.11'  # Specify the version you need
-      
-      # Step 4: Upgrade pip
-      #- name: Upgrade pip
-       # run: pip install --upgrade pip
-      
-      # Step 5: Install Python requirements
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-      
-      # Step 6: Build and deploy the site
-      - name: Build and deploy site
-        uses: rehanhaider/pelican-to-github-pages@v1.0.3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
