@@ -26,11 +26,11 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.11'  # Specify the version you need
+          python-version: '3.8'  # Specify the version you need
       
       # Step 4: Upgrade pip
-      - name: Upgrade pip
-        run: pip install --upgrade pip
+      #- name: Upgrade pip
+       # run: pip install --upgrade pip
       
       # Step 5: Install Python requirements
       - name: Install dependencies
