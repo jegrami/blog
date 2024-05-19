@@ -2,7 +2,7 @@ Web APIs vs Native Library APIs
 ###############################
 
 :date: 2024-05-02
-:category: Documentation
+:category: APIs
 :author: Jeremiah Igrami
 :tags: apis, api-documentation
 :slug: web-vs-library-apis

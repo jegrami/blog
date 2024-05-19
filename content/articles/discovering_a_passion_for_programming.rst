@@ -1,12 +1,11 @@
-Discovering a Passion for Programming: My First Steps
-#########################################################
+Discovering a passion for programming: my first steps (I)
+##########################################################
 
 
 :date: 2023-03-21
 :author: Jeremiah Igrami
 :category: programming
 :tag: programming, python, beginner
-:slug: my-first-steps
 :summary: This is my first post as a writer in the world of programming.
 
 

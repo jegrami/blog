@@ -6,8 +6,8 @@ Why Study Data Structures and Algorithms?
 :author: Jeremiah Igrami
 :category: DSA
 :slug: why-study-dsa
-:tags: algorithms, data
-:hide_summary: True
+:tags: algorithms, data-structures
+
 
 
 
@@ -45,11 +45,14 @@ study of data structures and algorithms.
 .. note-info::
 
     I use the terms 'programmer', 'software engineer', and 
-    'software developer' interchangeably in this article. They all mean the
-    same thing to me. A programmer is someone who specializes in writing 
-    computer source code, a.k.a programs. To be a software developer or software 
-    engineer, you need to be skilled in computer programming as well as other
-    things like software design and testing. 
+    'software developer' interchangeably in this article. IMHO, they're 
+    the same in a general context, but their slight connotations are also worth 
+    noting. A programmer is someone who specializes in writing 
+    computer source code, a.k.a. programs. Software engineer and software developer 
+    are roles that involve a lot of programming. To be a software developer or 
+    software engineer, you need to be skilled in at least one programming language
+    as well as other things like software design and testing, and have a 
+    broad undersanding of computer systems and engineering principles. 
     
 
 

@@ -81,11 +81,11 @@ M_HTMLSANITY_HYPHENATION = True
 M_HIDE_ARTICLE_SUMMARY = True
 M_COLLAPSE_FIRST_ARTICLE = True
 
-M_NEWS_ON_INDEX = ("My most recent articles", 3)
+M_NEWS_ON_INDEX = ("Most recent articles", 3)
 
 M_FINE_PRINT = """
-jegrami. Copyright © `Jeremiah Igrami <mailto:jegrami.de@gmail.com>`_, 2024.
-Made with `Pelican <https://getpelican.com>`_ and m.css.
+Jegrami. Copyright © `Jeremiah Igrami <mailto:jegrami.de@gmail.com>`_, 2024.
+Made beautiful & delighfully fast with `Pelican <https://getpelican.com>`_ and m.css.
 """
 
 PAGE_URL = '{slug}/'
