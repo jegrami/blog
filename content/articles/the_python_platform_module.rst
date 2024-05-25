@@ -6,6 +6,7 @@ The Python platform module: a quick dive
 :category: python
 :tag: python, windows, linux, machine
 :slug: the-python-platform-module
+:status: hidden
 
 
 The platform module in Python is designed to give you specific information about the underlying platform. In computing, a platform is the environment a piece of software is running on, typically the hardware and operating system of the computer you're working with.

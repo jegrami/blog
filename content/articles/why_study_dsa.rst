@@ -10,6 +10,11 @@ Why Study Data Structures and Algorithms?
 
 
 
+.. contents::
+    :class: m-block m-default
+
+`Overview`_
+===========
 
 Programmers learn a lot by looking at how other programmers do their work. 
 We learn by watching others do, and by doing. We learn how to solve problems
@@ -45,16 +50,15 @@ study of data structures and algorithms.
 .. note-info::
 
     I use the terms 'programmer', 'software engineer', and 
-    'software developer' interchangeably in this article. IMHO, they're 
-    the same in a general context, but their slight connotations are also worth 
-    noting. A programmer is someone who specializes in writing 
-    computer source code, a.k.a. programs. Software engineer and software developer 
-    are roles that involve a lot of programming. To be a software developer or 
-    software engineer, you need to be skilled in at least one programming language
-    as well as other things like software design and testing, and have a 
-    broad undersanding of computer systems and engineering principles. 
+    'software developer' interchangeably in this article. Though they 
+    generally mean the same to me, their slight differences are also worth 
+    noting. A programmer specializes in writing computer code, a.k.a. programs. 
+    Software engineer/developer are roles that involve a lot of 
+    programming. To be a software developer or software engineer, you need to be 
+    skilled at **programming** as well as other things like **software 
+    design and testing**, and you need to have a good understanding of **computer 
+    systems and engineering principles**. 
     
-
 
 Every software application on the planet is powered by two elements: 
 **data** and **algorithm**. While *algorithms* are step-by-step instructions 
@@ -73,8 +77,8 @@ Data Structures and Algorithms (DSA) are the cornerstone of computer science
 and software engineering. The two go hand-in-hand. Together, they provide 
 a powerful toolkit for programmers to tackle complex problems. 
 
-Why do tech companies use DSA problems to assess software engineering skills?
-==============================================================================
+`Why do tech companies use DSA problems to assess software engineering skills?`_
+================================================================================
 
 The internet is growing fast. So is the data we generate every day, and so is 
 our ability to perform complex computations on large input data. The problems 
@@ -86,8 +90,8 @@ solving large-scale problems.*
 The following are some more reasons why companies prefer devs with 
 DSA skills:
 
-To make efficient use of computing resources
----------------------------------------------
+`To make efficient use of computing resources`_
+-----------------------------------------------
 
 Companies measure the cost of a software solution by how much computing resource 
 it would consume. How much memory and execution time would the system need to run? 
@@ -96,20 +100,20 @@ They know how to choose the most suitable data structure and algorithm
 to minimize storage consumption and reduce costs for their company. 
 
 
-To create software systems that scale
--------------------------------------
+`To create software systems that scale`_
+----------------------------------------
 
 
 As more people get online, the number of users that software systems need to handle 
 grows rapidly. Scalability becomes a critical concern. With a well-designed app, 
-businesses can accommodate growing user traffic without compromising performance.
+a business can accommodate growing user traffic without compromising performance.
 Software engineers with DSA expertise build scalable apps by carefully selecting
 their data structures and obsessing over the execution time of their algorithms. 
 
 
 
-To serve performance-critical applications
--------------------------------------------
+`To serve performance-critical applications`_
+---------------------------------------------
 
 Interactive video applications like Zoom are a type of web apps that require 
 real-time, uninterrupted audio and video transmission in both directions. 
@@ -125,9 +129,10 @@ flow and retrieval. Building and maintaining performance-sensitive
 applications would be difficult without a solid grasp of DSA principles 
 and techniques.
 
+-----------------------------------
 
-Comparing Algorithms
-=====================
+`Comparing Algorithms`_
+=======================
 
 Algorithms are solutions. There are often more than one solution to a problem. 
 Programmers need a way to compare different solutions to determine which one is 
@@ -140,37 +145,31 @@ changes as the size of the data grows.
 
 For example, suppose you want to search for a name in a list of 40 names. 
 You could choose to use a **simple search algorithm** (also called *linear search*), 
-which will look at every name on the list one by one, from first to last, 
-until the target name is found. But it would take 40 steps to complete the 
+which will start from the beginning of the list and look at every name, one by one,  
+until the target name is found. This would take 40 lookups to complete the 
 search in the worst case (i.e., if the target name is the last entry on the list). 
 Now, assuming it takes a millisecond (ms) to lookup one name, 
-that’s 40 ms for 40 names. Programmers say this type of algorithm runs in 
+that’s 40 ms for 40 names. Programmers often say this type of algorithm runs in 
 *linear time*.
 
 Alternatively, you could choose the **binary search approach**. 
-Rather than look at every single name, one by one, binary search looks at the 
-*middle* name first, and then, if it's not the target name, it divides the list in 
-half and checks the middle name again. The algorithm will repeat 
+Unlike simple search, binary search starts from the *middle* of the list 
+and lookup the name there. And then, if it's not the target name, it divides the
+list in half, discards the part that doesn't have the name it's looking for, and 
+then searches for the middle name again in the remaining half. The algorithm will repeat 
 this process until the target name is found or the list is exhausted. 
 For a list of 40 names, a binary search will take roughly five steps 
-(or 5 ms) to achieve the same result because a binary search algorithm runs in 
+(or 5 ms) to achieve the same result. This is because the algorithm runs in 
 *logarithmic time*
 
-.. block-success:: A word on logarithms (from an innumerate)
+.. note-dim::
 
-    Think of logarithms as the inverse operation of exponentials. 
-    For example, the expression :math:`8^2` in logarithmic notation 
-    would be expressed as ``log base two of eight``, denoted as 
-    log\ :sub:`2`\  8. This is simply asking, `How many times do I need 
-    to multiply 2 by itself to get 8?` The answer is 3 times 
-    (:math:`2 * 2 * 2 = 8`). So :math:`2^8` (``two exponent eight``) is the same 
-    as log\ :sub:`2`\  8. Logarithms and exponentials are inverse operations
-    of each other. 
+    By the way, a millisecond (ms) is 1000th of a second. Take a second and 
+    slash it into 1000 pieces. One of those pieces is equal to a millisecond. 
 
 
-Now, back to comparing algorithms. Let’s assume that our list 
-suddenly grows into a database of three billion names. How will this growth 
-affect the search speed of our algorithms? 
+Now, let’s assume that our list suddenly grows into a database of three billion 
+names. How will this growth affect the search speed of our algorithms? 
 
 For the linear search algorithm, it will now take exactly three billion steps
 to complete the search. That's ``three billion ms``, equivalent to 34 days! 
@@ -178,13 +177,19 @@ to complete the search. That's ``three billion ms``, equivalent to 34 days!
 What about the binary search algorithm? How long will it take to 
 complete the search? Remember that binary search runs in logarithmic time. So that   
 would be log\ :sub:`2`\  3,000,000,000, which amounts 
-to roughly 31 steps (31 ms). 
+to roughly 31 steps (31 ms) because log\ :sub:`2`\  3,000,000,000 = 31.4. 
 
-As you can see, binary search is better than linear search for finding a name 
-quickly in a list of names, especially if that list is large. Also notice that,
-as the list grew larger, the performance gap between the two algorithms widened
-exponentially. Binary search becomes increasingly more efficient than 
-linear search as the size of the input data grows.
+
+.. note-primary:: 
+
+    I wrote an article explaining all these concepts in greater detail, including 
+    a supposedly simple note on logarithms. Read it `here <{filename}/articles/binary_search.rst>`_
+
+Based on our little experiment above, binary search is faster than linear search 
+for finding a particular name in a list of names, especially if that list 
+is large. Also notice that, as the list grew larger, the performance gap between 
+the two algorithms widened *exponentially*. **Binary search becomes increasingly 
+more efficient than linear search as the size of the input data grows**.
 
 Choosing the right tool and technique to tackle a problem could mean the 
 difference between solving that problem in **three seconds** and **three days**, 
@@ -197,18 +202,4 @@ DSA teaches you how to evaluate solutions for their efficiency so you can decide
 which one is best for the task at hand. Understanding the low-level 
 implementation details of common data structures and algorithms help 
 programmers achieve this.
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
 
